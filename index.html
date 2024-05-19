@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #050039;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://scontent.fkhi4-3.fna.fbcdn.net/v/t39.30808-6/441951003_122143105496098061_3109915569935101109_n.jpg?stp=dst-jpg_p180x540&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEu47rwZKlX8q_uF2tWmOkudpkLzTY20gF2mQvNNjbSAb1S0x_etQQtqBcN4QR7srSaLuM8ZuToL2f56kB4F_t3&_nc_ohc=dZi5oJhnB9UQ7kNvgHPOsvW&_nc_zt=23&_nc_ht=scontent.fkhi4-3.fna&oh=00_AYBlwRujaSBdt6pJCZxlLEJttGduwYqeWMpSjCt2XrV5gA&oe=664FDE23');
+            background-size: cover;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-image: url('https://scontent.fkhi4-3.fna.fbcdn.net/v/t39.30808-6/441951003_122143105496098061_3109915569935101109_n.jpg?stp=dst-jpg_p180x540&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEu47rwZKlX8q_uF2tWmOkudpkLzTY20gF2mQvNNjbSAb1S0x_etQQtqBcN4QR7srSaLuM8ZuToL2f56kB4F_t3&_nc_ohc=dZi5oJhnB9UQ7kNvgHPOsvW&_nc_zt=23&_nc_ht=scontent.fkhi4-3.fna&oh=00_AYBlwRujaSBdt6pJCZxlLEJttGduwYqeWMpSjCt2XrV5gA&oe=664FDE23');
+            background-size: cover;
+            background-position: center;
+        }
+        h1, h2 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .intro {
+            font-size: 1.2rem;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .video {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .video:hover {
+            transform: translateY(-5px);
+        }
+        .video iframe {
+            width: 100%;
+            height: 200px;
+            border: 0;
+        }
+        .video h3 {
+            background-color: #fdffff;
+            color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .music-player {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .music-player button {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .music-player button:hover {
+            background-color: #13f0aa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Music Website</h1>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>Welcome to My Music World</h2>
+        <p>Explore and enjoy some of my favorite tunes and videos. Feel free to browse around and discover new music!</p>
+    </section>
+
+    <section class="videos">
+        <div class="video">
+            <h3>Video 1</h3>
+            <iframe src="https://www.youtube.com/embed/wM18GX9jiPY" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+            <h3>Video 2</h3>
+            <iframe src="https://www.youtube.com/embed/3C1S7z535Bc" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="music-player">
+        <button>Play Music</button>
+    </section>
+</div>
+
+</body>
+</html>
